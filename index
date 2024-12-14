@@ -115,20 +115,14 @@
         <div class="ebook-container">
             <div class="ebook">
                 <h2>E-bok 1</h2>
-                <p>En introduksjon til kunstig intelligens i skolen.</p>
+                <p>KI for lærere: Lag gode ledetekster.</p>
                 <a href="/path/to/ebook1.pdf" download>Last ned</a>
             </div>
 
             <div class="ebook">
                 <h2>E-bok 2</h2>
-                <p>Hvordan bruke AI for å støtte elevenes læring.</p>
+                <p>KI for lærere: Systemledetekster.</p>
                 <a href="/path/to/ebook2.pdf" download>Last ned</a>
-            </div>
-
-            <div class="ebook">
-                <h2>E-bok 3</h2>
-                <p>AI og etisk refleksjon for lærere.</p>
-                <a href="/path/to/ebook3.pdf" download>Last ned</a>
             </div>
         </div>
 
