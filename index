@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratis e-bøker om kunstig intelligens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url('KI Skrivebordsbakgrunn.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .ebook-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .ebook {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #000;
+        }
+
+        .ebook h2 {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+
+        .ebook p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .ebook a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .ebook a:hover {
+            background-color: #0056b3;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .button-container a:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gratis e-bøker om kunstig intelligens for lærere</h1>
+    </header>
+
+    <main>
+        <p>Last ned gratis e-bøker som hjelper deg med å forstå og bruke kunstig intelligens i undervisningen.</p>
+
+        <div class="ebook-container">
+            <div class="ebook">
+                <h2>E-bok 1</h2>
+                <p>En introduksjon til kunstig intelligens i skolen.</p>
+                <a href="/path/to/ebook1.pdf" download>Last ned</a>
+            </div>
+
+            <div class="ebook">
+                <h2>E-bok 2</h2>
+                <p>Hvordan bruke AI for å støtte elevenes læring.</p>
+                <a href="/path/to/ebook2.pdf" download>Last ned</a>
+            </div>
+
+            <div class="ebook">
+                <h2>E-bok 3</h2>
+                <p>AI og etisk refleksjon for lærere.</p>
+                <a href="/path/to/ebook3.pdf" download>Last ned</a>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="about.html">Om prosjektet</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ditt Navn. Alle rettigheter reservert.</p>
+    </footer>
+</body>
+</html>
