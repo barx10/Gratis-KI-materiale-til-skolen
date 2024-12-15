@@ -20,6 +20,10 @@
             background: url('bakgrunn-3.png') no-repeat center center fixed; /* Endret bakgrunn */
             background-size: cover;
             color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         header {
@@ -35,9 +39,12 @@
         }
 
         main {
+            flex-grow: 1;
             padding: 20px;
-            display: inline-block;
-            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .intro-text {
@@ -51,17 +58,12 @@
         .ebook-container {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
             gap: 50px;
-            margin-top: 100px;
+            margin-top: 50px;
         }
 
         .ebook {
-            background: none;
-            border: none;
-            padding: 0;
             width: 200px;
-            color: #000;
             text-align: center;
         }
 
@@ -168,15 +170,11 @@
         }
 
         .button-container {
-            position: absolute;
-            bottom: 50px;
-            left: 50%;
-            transform: translateX(-50%);
             text-align: center;
+            margin-top: 30px;
         }
 
         .button-container button {
-            display: inline-block;
             padding: 10px 20px;
             background-color: #28a745;
             color: #fff;
@@ -192,8 +190,6 @@
         }
 
         footer {
-            position: fixed;
-            bottom: 0;
             width: 100%;
             padding: 10px 0;
             background-color: transparent; /* Fjernet skygge */
@@ -226,11 +222,11 @@ som hjelper deg med å forstå og bruke kunstig intelligens i undervisningen.</p
                 <a href="ebook2.pdf" download>Last ned</a>
             </div>
         </div>
-    </main>
 
-    <div class="button-container">
-        <button onclick="showPopup()">Om prosjektet</button>
-    </div>
+        <div class="button-container">
+            <button onclick="showPopup()">Om prosjektet</button>
+        </div>
+    </main>
 
     <footer>
         <p>&copy; 2024 Kenneth Bareksten. Alle rettigheter reservert.</p>
