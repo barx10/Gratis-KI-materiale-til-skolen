@@ -38,7 +38,7 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 20px;
-            margin-top: 20px;
+            margin-top: 50px; /* Flytter bøkene lenger ned */
         }
 
         .ebook {
@@ -47,7 +47,6 @@
             border-radius: 5px;
             padding: 20px;
             width: 250px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             color: #000;
             text-align: center;
         }
@@ -55,7 +54,8 @@
         .ebook img {
             width: 100px;
             height: auto;
-            margin-bottom: 10px;
+            margin-bottom: 20px; /* Øker avstanden under bildene */
+            box-shadow: none; /* Fjerner skygge rundt bildene */
         }
 
         .ebook h2 {
@@ -106,9 +106,9 @@
         .popup {
             display: none;
             position: fixed;
-            top: 50%;
+            bottom: 10px;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, 0);
             background-color: rgba(255, 255, 255, 0.95);
             padding: 20px;
             border-radius: 5px;
@@ -173,7 +173,7 @@
             <div class="ebook">
                 <img src="forside-ebook2.png" alt="E-bok 2">
                 <h2>E-bok 2</h2>
-                <p>KI for lærere: Systemledetekster.</p>
+                <p>KI for lærere: systemledetekster.</p>
                 <a href="ebook2.pdf" download>Last ned</a>
             </div>
         </div>
@@ -185,7 +185,7 @@
 
     <div id="popup" class="popup">
         <p><strong>Om prosjektet</strong></p>
-        <p>Dette prosjektet er utviklet i samarbeid med <a href="https://tankespirerne.dk" target="_blank">tankespirerne.dk</a> for å oversette og tilrettelegge e-bøker om kunstig intelligens for lærere. Målet er å gi praktiske ressurser som gjør det enklere for lærere å ta i bruk KI i undervisningen på en ansvarlig måte. Prosjektet legger vekt på etikk, praktiske eksempler og god ledetekstskriving. Det vil komme flere bøker i tiden framover.</p>
+        <p>Dette prosjektet er utviklet i samarbeid med <a href="https://tankespirerne.dk" target="_blank">tankespirerne.dk</a> for å oversette og tilrettelegge e-bøker om kunstig intelligens for lærere. Målet er å gi praktiske ressurser som gjør det enklere for lærere å ta i bruk KI i undervisningen på en ansvarlig måte. Prosjektet legger vekt på etikk, praktiske eksempler og god ledetekstskriving.</p>
         <button onclick="closePopup()">Lukk</button>
     </div>
 
