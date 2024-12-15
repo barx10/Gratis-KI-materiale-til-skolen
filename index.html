@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            background: url('bakgrunn.png') no-repeat center center fixed;
+            background: url('ki-skrivebordsbakgrunn.png') no-repeat center center fixed;
             background-size: cover;
             color: #fff;
         }
@@ -49,6 +49,13 @@
             width: 250px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             color: #000;
+            text-align: center;
+        }
+
+        .ebook img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
         }
 
         .ebook h2 {
@@ -96,7 +103,10 @@
         }
 
         footer {
-            margin-top: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            margin: 0;
             padding: 10px 0;
             background-color: rgba(0, 0, 0, 0.8);
             color: #fff;
@@ -114,12 +124,14 @@
 
         <div class="ebook-container">
             <div class="ebook">
+                <img src="forside-ebook1.png" alt="E-bok 1">
                 <h2>E-bok 1</h2>
                 <p>KI for lærere: Lag gode ledetekster.</p>
                 <a href="ebook1.pdf" download>Last ned</a>
             </div>
 
             <div class="ebook">
+                <img src="forside-ebook2.png" alt="E-bok 2">
                 <h2>E-bok 2</h2>
                 <p>KI for lærere: systemledetekster.</p>
                 <a href="ebook2.pdf" download>Last ned</a>
