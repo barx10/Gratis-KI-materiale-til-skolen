@@ -69,35 +69,43 @@
             height: auto;
             margin-top: 10px; /* Flytter ned bildene */
             margin-bottom: 10px;
+            cursor: pointer;
             box-shadow: none; /* Fjern skygge rundt bildene */
+            transition: transform 0.3s ease;
         }
 
-        .ebook h2 {
-            font-size: 20px; /* Økt størrelse */
-            margin: 15px 0 5px;
+        .ebook img:hover {
+            transform: scale(1.05); /* Liten forstørrelse ved hover */
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+        }
+
+        .popup img {
+            max-width: 80%;
+            max-height: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .popup .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
             color: #fff;
-            font-family: 'IndieFlower', Arial, sans-serif;
-        }
-
-        .ebook p {
-            font-size: 18px; /* Økt størrelse */
-            color: #fff;
-            font-family: 'IndieFlower', Arial, sans-serif;
-        }
-
-        .ebook a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background-color: #007BFF;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        .ebook a:hover {
-            background-color: #0056b3;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 1001;
         }
 
         .button-container {
@@ -141,18 +149,18 @@
     </header>
 
     <main>
-        <p class="intro-text">Last ned gratis e-bøker som hjelper deg med å forstå og bruke kunstig intelligens i undervisningen.</p>
+        <p class="intro-text">Last ned gratis e-bøker som hjelper deg med å forstå og bruke kunstig intelligens i undervisningen. Du kan fritt bruke, kopiere og dele med andre lærere.</p>
 
         <div class="ebook-container">
             <div class="ebook">
-                <img src="forside-ebook1.png" alt="E-bok 1">
+                <img src="forside-ebook1.png" alt="E-bok 1" onclick="showImage('forside-ebook1.png')">
                 <h2>E-bok 1</h2>
                 <p>KI for lærere: Lag gode ledetekster.</p>
                 <a href="ebook1.pdf" download>Last ned</a>
             </div>
 
             <div class="ebook">
-                <img src="forside-ebook2.png" alt="E-bok 2">
+                <img src="forside-ebook2.png" alt="E-bok 2" onclick="showImage('forside-ebook2.png')">
                 <h2>E-bok 2</h2>
                 <p>KI for lærere: systemledetekster.</p>
                 <a href="ebook2.pdf" download>Last ned</a>
@@ -168,9 +176,26 @@
         <p style="font-family: 'IndieFlower', Arial, sans-serif;">&copy; 2024 Kenneth Bareksten. Alle rettigheter reservert.</p>
     </footer>
 
+    <!-- Popup for forsidebilde -->
+    <div id="imagePopup" class="popup" onclick="closeImage()">
+        <span class="close">&times;</span>
+        <img id="popupImage" src="" alt="Forstørret bilde">
+    </div>
+
     <script>
         function showPopup() {
             alert('Dette prosjektet er utviklet i samarbeid med Tankespirerne.dk for å tilrettelegge og oversette e-bøker om KI til lærere.');
+        }
+
+        function showImage(src) {
+            const popup = document.getElementById('imagePopup');
+            const popupImage = document.getElementById('popupImage');
+            popupImage.src = src;
+            popup.style.display = 'block';
+        }
+
+        function closeImage() {
+            document.getElementById('imagePopup').style.display = 'none';
         }
     </script>
 </body>
