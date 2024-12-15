@@ -1,21 +1,19 @@
-# Gratis-KI-materiale-til-skolen
-Gratis e-bøker om kunstig intelligens for lærere 📚
-Velkommen til vår nettside for gratis e-bøker! Her kan du enkelt finne og laste ned et bredt utvalg av bøker uten kostnad.
+Velkommen til vår nettside for gratis e-bøker! Her kan du laste ned utvalgte bøker om kunstig intelligens og undervisning – helt uten kostnad.
 
 🎯 Hva tilbyr vi?
-	•	Et stort utvalg e-bøker innen ulike sjangre: skjønnlitteratur, fagbøker, klassikere og mer.
-	•	Brukervennlig søkefunksjon for å finne bøker etter kategori, forfatter eller emne.
-	•	100 % gratis og lovlig – vi deler kun bøker i offentlig eie eller med fri lisens.
+	•	To gratis e-bøker (foreløpig) skrevet av og for lærere som ønsker å lære om kunstig intelligens i klasserommet.
+	•	Bøkene er tilgjengelige i PDF-format for enkel nedlasting og lesing.
+	•	100 % gratis og lovlig – vi deler kun våre egne bøker og innhold med fri tilgang.
 
 🚀 Slik fungerer det
-	1.	Utforsk katalogen vår eller søk etter en bok.
-	2.	Klikk på bokens tittel for å lese mer om den.
-	3.	Last ned e-boken i ditt foretrukne format (PDF, EPUB, Kindle).
+	1.	Utforsk katalogen vår og les mer om de tilgjengelige bøkene.
+	2.	Klikk på bokens tittel for å åpne detaljsiden.
+	3.	Last ned PDF-en med ett klikk og les når det passer deg!
 
 💡 Bidra til prosjektet
 
-Har du forslag til forbedringer eller bøker å legge til? Ta kontakt med oss eller bidra direkte via GitHub-repositoryet vårt.
+Vi jobber med å utvide tilbudet vårt! Har du forslag til nye temaer eller bøker? Bidra med ideer via GitHub.
 
 📞 Kontakt oss
 
-Har du spørsmål? Send melding i GITHUBen e-post på eksempel@gratiseboker.no.
+Har du spørsmål eller tilbakemeldinger? Opprett en melding i vårt GitHub-repository eller kontakt oss direkte på e-post: kenneth.bareksten@lektor.no
