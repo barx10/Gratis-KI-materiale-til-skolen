@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nedlastninger</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #FFF;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .ebook-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 50px;
+        }
+        .ebook {
+            width: 200px;
+            text-align: center;
+        }
+        .ebook img {
+            width: 150px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .ebook img:hover {
+            transform: scale(1.05);
+        }
+        .ebook a {
+            color: #FFF;
+            text-decoration: none;
+        }
+        footer {
+            margin-top: 30px;
+            color: #FFF;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Download Page</h1>
+    <div class="ebook-container">
+        <div class="ebook">
+            <img src="forside-ebook1.png" alt="E-bok 1">
+            <h2>E-bok 1</h2>
+            <p>KI for lærere</p>
+            <a href="ebook1.pdf" download>Last ned</a>
+        </div>
+        <div class="ebook">
+            <img src="forside-ebook2.png" alt="E-bok 2">
+            <h2>E-bok 2</h2>
+            <p>KI for lærere</p>
+            <a href="ebook2.pdf" download>Last ned</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
