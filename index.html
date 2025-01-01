@@ -57,11 +57,16 @@
 
         .ebook-container {
             display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         gap: 50px;
-         margin-top: 50px;
-         overflow-y: scroll; /* Enable vertical scrolling */
-         max-height: 70vh; /* Adjust as needed */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 50px;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    max-height: 70vh; /* Adjust as needed */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE 10+ */
+}
+.ebook-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
      }
         }
 
@@ -247,7 +252,7 @@ kunstig intelligens i undervisningen.</p>
     </main>
 
     <footer>
-        <p>&copy; 2024 Kenneth Bareksten. Alle rettigheter reservert.</p>
+        <p>&copy; 2025 Kenneth Bareksten. Alle rettigheter reservert.</p>
     </footer>
 
     <!-- Popup for project details -->
@@ -255,7 +260,7 @@ kunstig intelligens i undervisningen.</p>
         <span class="close" onclick="closePopup()">&times;</span>
         <p>Dette er et pågående prosjekt fra et inspirerende samarbeid mellom Tankespirerne.dk og meg som lektor i Osloskolen. Målet mitt er å tilrettelegge og oversette gode e-bøker om kunstig intelligens for lærere og utdanning, som Tankespirerne har gitt ut i Danmark. Arbeidet med å gjøre KI mer tilgjengelig og relevant i skolen er viktig for alle oss som jobber i sektoren.</p>
         <p>Jeg vil spesielt rette en stor takk til Martin Kongshave ved Tankespirerne for tips og gode innspill i prosessen. Han har innsikt og engasjement og ønsker å gjøre en forskjell for lærere som ønsker å utforske KI som et pedagogisk verktøy.</p>
-        <p>Ved å utvikle ressurser som er skreddersydd for undervisningssektoren, håper vi å styrke læreres kunnskap og ferdigheter i å bruke KI på en ansvarlig og pedagogisk meningsfull måte. Dette samarbeidet har vært et godt eksempel på hvordan vi på tvers av landegrenser kan arbeide for å styrke undervisningen og bidra til at skolen blir en arena for både teknologisk og pedagogisk innovasjon. Flere nedlastinger vil følge etter hvert. God lesing og læring!</p>
+        <p>Ved å utvikle ressurser som er skreddersydd for undervisningssektoren, håper jeg å styrke læreres kunnskap og ferdigheter i å bruke KI på en ansvarlig og pedagogisk meningsfull måte. Dette samarbeidet har vært et godt eksempel på hvordan vi på tvers av landegrenser kan arbeide for å styrke undervisningen og bidra til at skolen blir en arena for både teknologisk og pedagogisk innovasjon. Flere nedlastinger vil følge etter hvert. God lesing og læring!</p>
     </div>
 
     <!-- Popup for enlarged images -->
