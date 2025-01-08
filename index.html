@@ -62,8 +62,8 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            position: relative;
-            top: 6cm;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
 
         .button-container a {
@@ -94,6 +94,18 @@
             background-color: transparent; /* Fjernet skygge */
             color: #fff;
             font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .intro-text {
+                font-size: 24px;
+            }
+
+            .button-container a {
+                width: 100px;
+                height: 40px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
