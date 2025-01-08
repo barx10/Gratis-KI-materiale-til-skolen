@@ -20,7 +20,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            background: url('bakgrunn-ny.png') no-repeat center center fixed; /* Endret bakgrunn */
+            background: url('bakgrunn-3.png') no-repeat center center fixed; /* Endret bakgrunn */
             background-size: cover;
             color: #fff;
             height: 100vh;
@@ -79,25 +79,27 @@
 
         .button-container {
             display: flex;
-            justify-content: space-around;
-            width: 100%;
-            position: absolute;
-            bottom: 5cm;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+            top: 5cm;
         }
 
         .button-container a {
-            padding: 10px 20px;
+            padding: 15px 30px;
             background-color: #007BFF;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 18px;
             font-family: Arial, sans-serif;
             cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .button-container a:hover {
             background-color: #0056b3;
+            transform: scale(1.1);
         }
 
         footer {
