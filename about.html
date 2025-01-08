@@ -27,6 +27,7 @@
         .content {
             max-width: 20cm;
             margin: 0 auto;
+            padding: 20px;
         }
         .content h1 {
             font-family: 'IndieFlower', Arial, sans-serif;
@@ -38,13 +39,22 @@
             font-size: 25px;
             text-align: center;
         }
+
+        @media (max-width: 600px) {
+            .content h1 {
+                font-size: 24px;
+            }
+            .content p {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="content">
         <h1>Om prosjektet</h1>
-        <p>Dette er et pågående prosjekt inspirert etter et samarbeid mellom Martin Kongshave på Tankespirerne.dk og meg som lektor i Osloskolen. Målet mitt er å skrive, tilpasse og oversette gode e-bøker om kunstig intelligens for lærere.</p>
-        <p>Ved å utvikle ressurser som er skreddersydd for undervisningssektoren, håper jeg å styrke læreres kunnskap og ferdigheter i å bruke KI på en ansvarlig og pedagogisk meningsfull måte</p>
+        <p>Dette er et pågående prosjekt inspirert etter et samarbeid mellom Martin Kongshave på Tankespirerne.dk og meg som lektor i Osloskolen. Målet mitt er å skrive, tilpasse og oversette ressurser for lærere om kunstig intelligens.</p>
+        <p>Ved å utvikle ressurser som er skreddersydd for undervisningssektoren, håper jeg å styrke læreres kunnskap og ferdigheter i å bruke KI på en ansvarlig og pedagogisk meningsfull måte.</p>
         <p>Arbeidet med å gjøre KI mer tilgjengelig og relevant i skolen, er viktig for alle oss som jobber i sektoren. God lesing og læring!</p>
     </div>
 </body>
