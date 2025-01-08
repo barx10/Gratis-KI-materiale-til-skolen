@@ -41,6 +41,25 @@
             font-size: 30px;
         }
 
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            border: 2px solid transparent;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            border-color: #fff;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
         main {
             flex-grow: 1;
             padding: 20px;
@@ -58,148 +77,27 @@
             white-space: pre-line;
         }
 
-        .ebook-container {
-            display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    margin-top: 50px;
-    overflow-y: scroll; /* Enable vertical scrolling */
-    max-height: 70vh; /* Adjust as needed */
-    scrollbar-width: none; /* Hide scrollbar in Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar in IE 10+ */
-}
-.ebook-container::-webkit-scrollbar {
-    display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
-     }
-        }
-
-        .ebook {
-            width: 200px;
-            text-align: center;
-        }
-
-        .ebook img {
-            width: 150px;
-            height: auto;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            cursor: pointer;
-            box-shadow: none;
-            transition: transform 0.3s ease;
-        }
-
-        .ebook img:hover {
-            transform: scale(1.05);
-        }
-
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: none;
-            z-index: 1000;
-            max-width: 80%;
-            text-align: left;
-            color: #000;
-            font-family: Arial, sans-serif;
-            line-height: 1.5;
-        }
-
-        .popup .close {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            font-size: 30px;
-            color: #000;
-            cursor: pointer;
-        }
-
-        .popup p {
-            margin-bottom: 20px;
-        }
-
-        .popup-image {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
+        .button-container {
+            display: flex;
+            justify-content: space-around;
             width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            z-index: 9999;
-        }
-
-        .popup-image img {
-            max-width: 80%;
-            max-height: 80%;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            bottom: 5cm;
         }
 
-        .popup-image .close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: #fff;
-            font-size: 30px;
-            cursor: pointer;
-        }
-
-        .ebook h2 {
-            font-family: 'IndieFlower', Arial, sans-serif;
-    font-size: 22px;
-    color: #fff;
-    white-space: pre-wrap; /* Ensure titles wrap to the next line */
-    text-align: center; /* Center the titles */
-        }
-
-        .ebook p {
-            font-family: 'IndieFlower', Arial, sans-serif;
-            font-size: 18px;
-            color: #fff;
-        }
-
-        .ebook a {
-            display: inline-block;
-            font-family: 'IndieFlower', Arial, sans-serif;
-            margin-top: 10px;
-            padding: 10px 15px;
+        .button-container a {
+            padding: 10px 20px;
             background-color: #007BFF;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
-        }
-
-        .ebook a:hover {
-            background-color: #0056b3;
-        }
-
-        .button-container {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .button-container button {
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
             font-family: Arial, sans-serif;
             cursor: pointer;
         }
 
-        .button-container button:hover {
-            background-color: #218838;
+        .button-container a:hover {
+            background-color: #0056b3;
         }
 
         footer {
@@ -214,7 +112,7 @@
 <body>
     <header>
         <h1>Gratis e-bøker om kunstig intelligens for lærere</h1>
-         <nav>
+        <nav>
             <a href="about.html">Om</a>
             <a href="kontakt.html">Kontakt</a>
         </nav>
@@ -225,38 +123,10 @@
 som hjelper deg med å forstå og bruke 
 kunstig intelligens i undervisningen.</p>
 
-        <div class="ebook-container">
-            <div class="ebook">
-    <img src="forside-ebook1.png" alt="E-bok 1" onclick="showImage('forside-ebook1.png')">
-    <h2>E-bok 1<br>KI for lærere</h2>
-    <p>Lag gode ledetekster.</p>
-    <a href="ebook1.pdf" download>Last ned</a>
-</div>
-
-<div class="ebook">
-    <img src="forside-ebook2.png" alt="E-bok 2" onclick="showImage('forside-ebook2.png')">
-    <h2>E-bok 2<br>KI for lærere</h2>
-    <p>Systemledetekster.</p>
-    <a href="ebook2.pdf" download>Last ned</a>
-</div>
-
-<div class="ebook">
-    <img src="forside-ebook3.png" alt="E-bok 3" onclick="showImage('forside-ebook3.png')">
-    <h2>E-bok 3<br>KI for lærere</h2>
-    <p>Produktivitet, undervisning og pedagogikk.</p>
-    <a href="ebook3.pdf" download>Last ned</a>
-</div>
-
-<div class="ebook">
-    <img src="forside-ebook4.png" alt="E-bok 4" onclick="showImage('forside-ebook4.png')">
-    <h2>E-bok 4<br>KI for lærere</h2>
-    <p>Innføring om bruk av kunstig intelligens i skolen.</p>
-    <a href="ebook4.pdf" download>Last ned</a>
-</div>
-        </div>
-
         <div class="button-container">
-            <button onclick="showPopup()">Om prosjektet</button>
+            <a href="nedlast.html">Nedlastninger</a>
+            <a href="about.html">Om prosjektet</a>
+            <a href="kontakt.html">Kontakt</a>
         </div>
     </main>
 
@@ -264,31 +134,7 @@ kunstig intelligens i undervisningen.</p>
         <p>&copy; 2025 Kenneth Bareksten. Alle rettigheter reservert.</p>
     </footer>
 
-    <!-- Popup for project details -->
-    <div id="popupText" class="popup">
-        <span class="close" onclick="closePopup()">&times;</span>
-        <p>Dette er et pågående prosjekt inspirert etter et samarbeid mellom Martin Kongshave på Tankespirerne.dk og meg som lektor i Osloskolen. Målet mitt er å skrive, tilpasse og oversette gode e-bøker om kunstig intelligens for lærere og utdanning. Arbeidet med å gjøre KI mer tilgjengelig og relevant i skolen er viktig for alle oss som jobber i sektoren.</p>
-        <p>Ved å utvikle ressurser som er skreddersydd for undervisningssektoren, håper jeg å styrke læreres kunnskap og ferdigheter i å bruke KI på en ansvarlig og pedagogisk meningsfull måte. Flere nedlastinger vil følge etter hvert. God lesing og læring!</p>
-    </div>
-
-    <!-- Popup for enlarged images -->
-    <div id="popupImageContainer" class="popup-image">
-        <span class="close" onclick="closeImage()">&times;</span>
-        <img id="popupImage" src="" alt="Forstørret bilde">
-    </div>
-
     <script>
-        function showImage(src) {
-            const popupContainer = document.getElementById('popupImageContainer');
-            const popupImage = document.getElementById('popupImage');
-            popupImage.src = src;
-            popupContainer.style.display = 'block';
-        }
-
-        function closeImage() {
-            document.getElementById('popupImageContainer').style.display = 'none';
-        }
-
         function showPopup() {
             document.getElementById('popupText').style.display = 'block';
         }
