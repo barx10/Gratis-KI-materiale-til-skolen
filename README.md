@@ -6,7 +6,7 @@ Velkommen til denne nettsiden for gratis e-bøker! Her kan du laste ned utvalgte
 	•	100 % gratis og lovlig – Jeg deler kun egne bøker og innhold med fri tilgang.
 
 🚀 Slik fungerer det
-	1.	Utforsk katalogen og les mer om de tilgjengelige bøkene.
+	1.	Utforsk nedlastningssiden og les mer om de tilgjengelige bøkene.
 	2.	Klikk på bokens tittel for å åpne detaljsiden.
 	3.	Last ned PDF-en med ett klikk og les når det passer deg!
 
