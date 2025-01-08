@@ -33,6 +33,7 @@
             justify-content: center;
             gap: 50px;
             margin-top: 50px;
+            flex-wrap: wrap;
         }
         .ebook {
             width: 200px;
@@ -63,13 +64,26 @@
             background-color: #0056b3;
         }
         footer {
-           width: 100%;
+            width: 100%;
             padding: 10px 0;
             background-color: rgba(0, 0, 0, 0.8);
             color: #FFF;
             text-align: center;
             position: fixed;
             bottom: 0;
+        }
+
+        @media (max-width: 600px) {
+            .ebook {
+                width: 150px;
+            }
+            .ebook img {
+                width: 100px;
+            }
+            .ebook a {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
         }
     </style>
 </head>
@@ -96,7 +110,7 @@
         </div>
         <div class="ebook">
             <img src="forside-ebook4.png" alt="E-bok 4">
-            <h2>E-bok 4<br>KI for lærere</h2>
+            <h2>E-bok 4<br>KI for lærere</h3>
             <h3>Innføring om bruk av kunstig intelligens i skolen</h3>
             <a href="ebook4.pdf" download>Last ned</a>
         </div>
