@@ -41,13 +41,14 @@
     }
 
     main {
-        flex-grow: 1;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Gjør det mulig å bruke absolute posisjonering for .button-container */
+}
 
     .intro-text {
         font-family: 'IndieFlower', Arial, sans-serif;
@@ -57,11 +58,12 @@
     }
 
     .button-container {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 20px; /* Flytter knappene nærmere bunnen av tavlen */
     }
 
     .button-container a {
@@ -84,12 +86,13 @@
     }
 
     footer {
-        width: 100%;
-        padding: 10px 5%;
-        background-color: rgba(0, 0, 0, 0.8);
-        color: #fff;
-        font-size: 0.8rem;
-    }
+    width: 100%;
+    padding: 10px 5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 0.8rem;
+    box-shadow: none; /* Fjerner skyggen */
+}
 
     /* Media queries for small screens */
     @media (max-width: 768px) {
